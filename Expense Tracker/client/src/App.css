@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 0.5em;
+}
+::-webkit-scrollbar-track{
+    background: hsl(0, 0%, 8%);
+}
+::-webkit-scrollbar-thumb{
+    background: hsl(0, 0%, 20%); 
+}
+@supports (scrollbar-color: hsl(0, 0%, 20%) hsl(0, 0%, 8%)){
+    *{
+        scrollbar-color: hsl(0, 0%, 20%) hsl(0, 0%, 8%);
+        scrollbar-width: thin;
+    }
+}
+
+#light{
+    background-color: #ffffff;
+    color: #202020;
+}
+#dark{
+    color: #ffffff;
+    background-color: #202020;
+}
+#dark .innerContainer{
+    background-color: #303030;
+}
+#dark .incomeExpense{
+    background: #404040;
+}
+#dark #task-list-item{
+    background: #404040;
+}
+#dark #new-transaction form div input{
+    background-color: #404040;
+}
