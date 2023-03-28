@@ -1,0 +1,19 @@
+<% layout('layouts/boilerplate.ejs') -%>
+
+    <div class="logo">
+        <h1>CREATE</h1>
+    </div>
+
+    <div class="formContainer">
+        <form action="/posts" method="POST">
+            <div>
+                <label for="title" id="formText">Title</label><br>
+                <input type="text" name="title" class="formInput" placeholder="write title" required>
+            </div>
+            <div>
+                <label for="description" id="formText">Description</label><br>
+                <textarea name="description" class="formInput" cols="20" rows="10" placeholder="write description" required></textarea>
+            </div>
+            <button type="submit">Add</button>
+        </form>
+    </div>

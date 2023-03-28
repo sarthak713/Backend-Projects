@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0em;
+}
+
+::-webkit-scrollbar-track {
+    background: #4f4f4f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #262626;
+}
+
+@supports (scrollbar-color: #4f4f4f #262626) {
+    * {
+        scrollbar-color: #4f4f4f #262626;
+        scrollbar-width: thin;
+    }
+}
+
+::selection {
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 120px;
+}
+
+.tag {
+    position: relative;
+    height: 50px;
+    width: 100px;
+    background-color: aqua;
+    transition: all 0.2s ease;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    color: blanchedalmond;
+}
+
+.tag:hover {
+    height: 100px;
+    font-size: 25px;
+    width: 120px;
+    padding-top: 30px;
+}
+
+#tag1 {
+    background-color: rgba(250, 90, 90, 0.8);
+}
+
+#tag2 {
+    background-color: rgba(105, 252, 125, 0.8);
+}
+
+#tag3 {
+    background-color: rgba(174, 97, 252, 0.8);
+}
+
+#tag4 {
+    background-color: rgba(98, 95, 255, 0.8);
+}
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.allPosts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post {
+    width: 100%;
+    background-color: rgba(255, 116, 139, 0.6);
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.post .title {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.post .description {
+    padding: 10px;
+}
+
+.post .img {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.post .img img {
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.post .link {
+    margin: 20px 10px;
+}
+
+.logo {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo h1 {
+    color: rgba(95, 95, 95, 0.2);
+    transform: rotate(30deg);
+}
+
+.viewLink {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 122, 122, 0.8);
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.5);
+}
+
+.onePost {
+    background-color: rgba(164, 84, 255, 0.6);
+    border-radius: 10px;
+}
+
+.onePost .title {
+    background: rgba(255, 255, 255, 0.429);
+    width: 100%;
+    padding: 20px;
+}
+
+.onePost .title h3 {
+    font-size: 30px;
+}
+
+.onePost .description {
+    margin: 20px 10px;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.onePost .img {
+    width: 100%;
+    text-align: center;
+}
+
+.onePost .img img {
+    margin: 20px 0;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.onePost .links {
+    display: flex;
+    margin: 20px;
+}
+
+.onePost .links a {
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.7);
+}
+
+.onePost .links form button{
+    color: white;
+    background-color: rgba(255, 82, 82, 0.8);
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 10px 10px;
+    font-size: 15px;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.5);
+}
+
+.formContainer {
+    padding: 30px 50px;
+    background: rgba(84, 255, 149, 0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#formText {
+    font-size: 20px;
+}
+
+.formInput {
+    padding: 10px;
+    margin: 5px 0 10px;
+    font-size: 15px;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+.formContainer form button {
+    color: white;
+    background-color: rgba(255, 159, 91, 0.8);
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 15px;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.5);
+}

@@ -1,0 +1,19 @@
+<% layout('layouts/boilerplate.ejs') -%>
+
+    <div class="logo">
+        <h1>EDIT</h1>
+    </div>
+
+    <div class="formContainer">
+        <form action="/posts/<%=post._id%>?_method=PATCH" method="POST">
+            <div>
+                <label for="title" id="formText">Title</label><br>
+                <input type="text" name="title" class="formInput" placeholder="write title" value="<%=post.title%>" required>
+            </div>
+            <div>
+                <label for="description" id="formText">Description</label><br>
+                <textarea name="description" class="formInput" cols="20" rows="10"placeholder="write description" required><%=post.description%></textarea>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </div>
