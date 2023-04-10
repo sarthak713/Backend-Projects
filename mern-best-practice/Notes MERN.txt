@@ -1,0 +1,33 @@
+MERN Stack (Traversy Media)
+
+        C create : HTTP POST    /api/devices + payload
+ REST   R read   : HTTP GET     /api/devices                 REST
+CLIENT  U update : HTTP PUT     /api/devices/id + payload   SERVER
+        D delete : HTTP DELETE  /api/devices/id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
