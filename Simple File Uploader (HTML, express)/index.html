@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Uploader</title>
+</head>
+<body>
+
+    <h1>Express File Upload</h1>
+    <!-- Send data to '/upload' route -->
+    <!-- set encoding-type 'enctype' to 'multipart/form-data' which allows to send files through HTTP POST request -->
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <!-- name attribute is needed to retrieve uploaded file -->
+        <input type="file" name="myFile">
+        <input type="submit">
+    </form>
+
+</body>
+</html>
